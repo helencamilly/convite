@@ -1,0 +1,39 @@
+<index class="html"></index>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        #dogImage {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Você aceita queimar uma erva da Jamaica?</h1>
+    <button id="yesButton" onclick="accept()">Sim</button>
+    <button id="noButton" onclick="deny()">Não</button>
+    <img id="dogImage" src="https://via.placeholder.com/150" alt="Cachorro com folhas">
+
+    <script>
+        function accept() {
+            // Mostrar a imagem e a mensagem
+            document.getElementById('dogImage').style.display = 'block';
+            alert("Aoniou Loviu");
+        }
+
+        function deny() {
+            // Desativar o botão "Não"
+            document.getElementById('noButton').disabled = true;
+        }
+    </script>
+</body>
+</html>
